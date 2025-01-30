@@ -17,6 +17,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: isProd ? "/portifolio/" : "",
+  basePath: isProd ? "/portifolio" : "",
   output: "export",
 };
 
