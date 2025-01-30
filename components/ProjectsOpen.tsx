@@ -15,7 +15,7 @@ const projects = [
     title: "LoteriaLegal",
     description: "A simulation of a lottery, with a backend in node.js, next.js and react.js, using a mongodb database to store the data.",
     tech: ["next.js", "react.js", "Node.js", "Tailwindcss", "mongodb"],
-    link: "https://github.com/SrLiath/DayaLivros"
+    link: "https://github.com/SrLiath/lotto"
   },
   {
     title: "Daya livros",
@@ -57,6 +57,9 @@ export default function ProjectsOpen() {
         >
           Personal projects
         </motion.h2>
+        <motion.p className="text-gray-400 mb-4">
+          click to see the repository and photos in README
+        </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
