@@ -18,7 +18,7 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          I'm a senior front-end developer with over 8 years of experience in creating responsive, performant, and
+          I'm a Jr front-end developer with over 8 years of experience in creating responsive, performant, and
           accessible web applications. My expertise includes React, Next.js, TypeScript, and modern CSS frameworks like
           Tailwind.
         </motion.p>
