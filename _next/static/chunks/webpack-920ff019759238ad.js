@@ -181,7 +181,7 @@
     (d.tu = function (e) {
       return d.tt().createScriptURL(e);
     }),
-    (d.p = "_next/"),
+    (d.p = "next/"),
     (i = { 272: 0, 944: 0 }),
     (d.f.j = function (e, t) {
       var r = d.o(i, e) ? i[e] : void 0;

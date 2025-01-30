@@ -495,14 +495,12 @@
       async function $(e) {
         void 0 === e && (e = {}),
           W.default.onSpanEnd(q.default),
-          (o = JSON.parse(
-            document.getElementById("__NEXT_DATA__").textContent
-          )),
-          (window.__NEXT_DATA__ = o),
+          (o = JSON.parse(document.getElementById("_next_DATA__").textContent)),
+          (window._next_DATA__ = o),
           (h = o.defaultLocale);
         let t = o.assetPrefix || "";
         if (
-          (self.__next_set_public_path__("" + t + "/_next/"),
+          (self._next_set_public_path__("" + t + "/next/"),
           (0, w.setConfig)({
             serverRuntimeConfig: {},
             publicRuntimeConfig: o.runtimeConfig || {},
@@ -520,12 +518,12 @@
           return i.routeLoader.onEntrypoint(t, r);
         };
         return (
-          window.__NEXT_P &&
-            window.__NEXT_P.map((e) => setTimeout(() => s(e), 0)),
-          (window.__NEXT_P = []),
-          (window.__NEXT_P.push = s),
+          window._next_P &&
+            window._next_P.map((e) => setTimeout(() => s(e), 0)),
+          (window._next_P = []),
+          (window._next_P.push = s),
           ((l = (0, M.default)()).getIsSsr = () => n.isSsr),
-          (u = document.getElementById("__next")),
+          (u = document.getElementById("_next")),
           { assetPrefix: t }
         );
       }
@@ -547,7 +545,7 @@
               value: (0, F.adaptForSearchParams)(n),
               children: (0, g.jsx)(F.PathnameContextProviderAdapter, {
                 router: n,
-                isAutoExport: null != (t = self.__NEXT_DATA__.autoExport) && t,
+                isAutoExport: null != (t = self._next_DATA__.autoExport) && t,
                 children: (0, g.jsx)(B.PathParamsContext.Provider, {
                   value: (0, F.adaptForPathParams)(n),
                   children: (0, g.jsx)(E.RouterContext.Provider, {
@@ -560,7 +558,7 @@
                             640, 750, 828, 1080, 1200, 1920, 2048, 3840,
                           ],
                           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-                          path: "_next/image",
+                          path: "next/image",
                           loader: "default",
                           dangerouslyAllowSVG: !1,
                           unoptimized: !0,
@@ -865,8 +863,8 @@
         } catch (e) {
           t = (0, L.getProperError)(e);
         }
-        window.__NEXT_PRELOADREADY &&
-          (await window.__NEXT_PRELOADREADY(o.dynamicIds)),
+        window._next_PRELOADREADY &&
+          (await window._next_PRELOADREADY(o.dynamicIds)),
           (n = (0, A.createRouter)(o.page, o.query, a, {
             initialProps: o.props,
             pageLoader: i,
@@ -1012,10 +1010,7 @@
               (0, c.removeTrailingSlash)((0, u.addLocale)(e, n)),
               ".json"
             );
-            return (0, o.addBasePath)(
-              "/_next/data/" + this.buildId + t + p,
-              !0
-            );
+            return (0, o.addBasePath)("/next/data/" + this.buildId + t + p, !0);
           })(
             e.skipInterpolation
               ? h
@@ -1346,7 +1341,7 @@
             }, [e]),
             (0, o.jsx)("p", {
               "aria-live": "assertive",
-              id: "__next-route-announcer__",
+              id: "_next-route-announcer__",
               role: "alert",
               style: u,
               children: t,
@@ -1455,7 +1450,7 @@
       function h(e, t) {
         return p().then((r) => {
           if (!(t in r)) throw l(Error("Failed to lookup route: " + t));
-          let o = r[t].map((t) => e + "/_next/" + encodeURI(t));
+          let o = r[t].map((t) => e + "/next/" + encodeURI(t));
           return {
             scripts: o
               .filter((e) => e.endsWith(".js"))
@@ -1958,7 +1953,7 @@
                   nonce: P,
                   dangerouslySetInnerHTML: {
                     __html:
-                      "(self.__next_s=self.__next_s||[]).push(" +
+                      "(self._next_s=self._next_s||[]).push(" +
                       JSON.stringify([r, { ...h, id: t }]) +
                       ")",
                   },
@@ -1970,7 +1965,7 @@
                   nonce: P,
                   dangerouslySetInnerHTML: {
                     __html:
-                      "(self.__next_s=self.__next_s||[]).push(" +
+                      "(self._next_s=self._next_s||[]).push(" +
                       JSON.stringify([0, { ...h, id: t }]) +
                       ")",
                   },
@@ -1991,7 +1986,7 @@
         }
         return null;
       }
-      Object.defineProperty(y, "__nextScript", { value: !0 });
+      Object.defineProperty(y, "_nextScript", { value: !0 });
       let b = y;
       ("function" == typeof t.default ||
         ("object" == typeof t.default && null !== t.default)) &&
@@ -2128,7 +2123,7 @@
       "use strict";
       Object.defineProperty(t, "__esModule", { value: !0 }),
         r(4878),
-        (self.__next_set_public_path__ = (e) => {
+        (self._next_set_public_path__ = (e) => {
           r.p = e;
         }),
         ("function" == typeof t.default ||
@@ -2680,8 +2675,8 @@
         D = ["/_document", "/_app", "/_error"],
         k = "public",
         U = "static",
-        F = "__NEXT_DROP_CLIENT_FILE__",
-        B = "__NEXT_BUILTIN_DOCUMENT__",
+        F = "_next_DROP_CLIENT_FILE__",
+        B = "_next_BUILTIN_DOCUMENT__",
         H = "__barrel_optimize__",
         W = "client-reference-manifest",
         q = "server-reference-manifest",
@@ -2994,7 +2989,7 @@
         n = {
           deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
           imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-          path: "/_next/image",
+          path: "/next/image",
           loader: "default",
           loaderFile: "",
           domains: [],
@@ -3372,7 +3367,7 @@
             if (
               (!l ||
                 u ||
-                l.includes("__next_data_catchall") ||
+                l.includes("_next_data_catchall") ||
                 l.includes("/_error") ||
                 l.includes("/404") ||
                 (u = l),
@@ -3951,7 +3946,7 @@
             }
             H &&
               "/_error" === this.pathname &&
-              (null == (f = self.__NEXT_DATA__.props)
+              (null == (f = self._next_DATA__.props)
                 ? void 0
                 : null == (c = f.pageProps)
                 ? void 0
@@ -3986,7 +3981,7 @@
               )
                 throw Error("Unexpected middleware effect on " + this.pathname);
               "/_error" === this.pathname &&
-                (null == (x = self.__NEXT_DATA__.props)
+                (null == (x = self._next_DATA__.props)
                   ? void 0
                   : null == (R = x.pageProps)
                   ? void 0
@@ -4145,8 +4140,8 @@
               (w && ("/_error" === r || "/404" === r) && (w.effect = void 0),
               h &&
                 (w
-                  ? (w.json = self.__NEXT_DATA__.props)
-                  : (w = { json: self.__NEXT_DATA__.props })),
+                  ? (w.json = self._next_DATA__.props)
+                  : (w = { json: self._next_DATA__.props })),
               t(),
               (null == w
                 ? void 0
@@ -4576,7 +4571,7 @@
                 this._bfl_d.import(n));
           }
           (this.events = V.events), (this.pageLoader = i);
-          let O = (0, p.isDynamicRoute)(e) && self.__NEXT_DATA__.autoExport;
+          let O = (0, p.isDynamicRoute)(e) && self._next_DATA__.autoExport;
           if (
             ((this.basePath = "/portifolio"),
             (this.sub = f),
@@ -4585,10 +4580,10 @@
             (this.isSsr = !0),
             (this.isLocaleDomain = !1),
             (this.isReady = !!(
-              self.__NEXT_DATA__.gssp ||
-              self.__NEXT_DATA__.gip ||
-              self.__NEXT_DATA__.isExperimentalCompile ||
-              (self.__NEXT_DATA__.appGip && !self.__NEXT_DATA__.gsp) ||
+              self._next_DATA__.gssp ||
+              self._next_DATA__.gip ||
+              self._next_DATA__.isExperimentalCompile ||
+              (self._next_DATA__.appGip && !self._next_DATA__.gsp) ||
               (!O && !self.location.search)
             )),
             (this.state = {
@@ -4786,7 +4781,7 @@
             (t = (0, n.removeTrailingSlash)(t)),
           e.buildId &&
             (t = (0, a.addPathSuffix)(
-              (0, o.addPathPrefix)(t, "/_next/data/" + e.buildId),
+              (0, o.addPathPrefix)(t, "/next/data/" + e.buildId),
               "/" === e.pathname ? "index.json" : ".json"
             )),
           (t = (0, o.addPathPrefix)(t, e.basePath)),
@@ -4910,11 +4905,11 @@
           (c.basePath = u));
         let f = c.pathname;
         if (
-          c.pathname.startsWith("/_next/data/") &&
+          c.pathname.startsWith("/next/data/") &&
           c.pathname.endsWith(".json")
         ) {
           let e = c.pathname
-              .replace(/^\/_next\/data\//, "")
+              .replace(/^\/next\/data\//, "")
               .replace(/\.json$/, "")
               .split("/"),
             r = e[0];
