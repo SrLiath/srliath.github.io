@@ -27,7 +27,7 @@ const projects = [
     title: "AutoWxs",
     description: "A personal lib to gen scripts to use in WiX Toolset to generate a MSI package installer",
     tech: ["python", "DotNet", "WiX Toolset"],
-    link: "https://github.com/SrLiath/UpdaterClientServer"
+    link: "https://github.com/SrLiath/autoWxs"
   },
 
 ]
