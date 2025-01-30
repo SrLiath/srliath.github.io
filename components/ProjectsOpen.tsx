@@ -8,13 +8,19 @@ const projects = [
   {
     title: "Polibot",
     description: "An RPA application written in Python to automate desktop processes in Windows with no-code functionality. It includes its own compiler and uses a JSON file to determine the automation tasks to be executed. It can also be triggered by a voice command. with 3 versions, python, nodejs and java",
-    tech: ["Python", "Node.js", "Java", "automation"],
+    tech: ["Node.js", "Python", "Java", "automation"],
     link: "https://github.com/srliath/polibot"
+  },
+  {
+    title: "LoteriaLegal",
+    description: "A simulation of a lottery, with a backend in node.js, next.js and react.js, using a mongodb database to store the data.",
+    tech: ["next.js", "react.js", "Node.js", "Tailwindcss", "mongodb"],
+    link: "https://github.com/SrLiath/DayaLivros"
   },
   {
     title: "Daya livros",
     description: "A landing Page to sell ebooks writted in next.js.",
-    tech: ["next.js", "react.js", "Node.js"],
+    tech: ["next.js", "react.js", "Node.js", "Tailwindcss"],
     link: "https://github.com/SrLiath/DayaLivros"
   },
   {
@@ -28,6 +34,12 @@ const projects = [
     description: "A personal lib to gen scripts to use in WiX Toolset to generate a MSI package installer",
     tech: ["python", "DotNet", "WiX Toolset"],
     link: "https://github.com/SrLiath/autoWxs"
+  },
+  {
+    title: "JbLogistic",
+    description: "A system to delivery, a home to show the service, a admin and user logins, work with GCP and Matrix API to see distance and time to delivery a product",
+    tech: ["PHP", "Codeigniter 4", "Mysql", "GCP"],
+    link: "https://github.com/SrLiath/JbLogistic"
   },
 
 ]
